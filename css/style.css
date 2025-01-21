@@ -1,0 +1,157 @@
+
+/*Reinicio default*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {  
+  background-color: rgb(154, 193, 226);
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}
+
+.menu {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+  background-color: rgb(45, 9, 78);
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.menu li {
+  margin: 0 3px;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  padding: 8px 10px;
+  color: white;
+}
+
+header {
+  text-align: center;
+}
+
+
+header h1 {
+  color: rgb(34, 34, 121);
+  text-transform: uppercase;
+
+}
+
+
+.parrafo-header {
+  background-color: #2b2b2b;
+  color: whitesmoke;
+  font-size: 19px;
+  font-style: italic;
+  padding: 6px;
+  display: inline-block;
+  box-shadow: 10px 10px 10px grey;
+  border-radius: 50px;
+}
+
+
+.que-es {
+  padding: 15px;
+  margin: 20px 50px;
+  font-size: 17px;
+}
+
+.fotos-tipo {
+  display: flex;
+  background-color: #2b2b2b;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.fotos-tipo div {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  align-items: center;
+  
+}
+
+.fotos-tipo div img {
+  width: 300px;
+  height: 250px;
+  margin: auto 40px;
+}
+
+.quien-soy {
+  background-color: rgba(61, 50, 214, 0.322);
+  margin: 30px 4%;
+}
+
+
+.quien-soy h2 {
+  background-color: rgba(0, 0, 0, 0.39);
+  text-align: center;
+}
+
+.quien-soy img {
+  margin-top: 30px;
+}
+
+.quien-soy p {
+  padding: 20px;
+}
+
+div {
+  text-align: center;
+}
+
+
+.entrenamiento-distancia {
+  background-color: rgba(0, 0, 0, 0.39);
+  text-align: center;
+  font-size: 22px;
+}
+
+
+h2+ul {
+  background-color: rgb(130, 174, 185);
+  text-align: center;
+  list-style: inside;
+  text-decoration: underline;
+}
+
+main {
+  text-align: center;
+}
+
+
+
+.clase-gratis {
+  font-style: italic;
+}
+
+
+.redes {
+  list-style: none;
+  font-size: 20px;
+}
+
+
+fieldset {
+  background-color: rgba(40, 40, 41, 0.527);
+}
+
+footer {
+  font-size: 13px;
+  text-align: center;
+  padding: 20px;
+}
