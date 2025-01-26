@@ -28,6 +28,9 @@
 
 <nav class="navbar navbar-expand-lg bg-delta">
   <div class="container-fluid">
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -51,51 +54,68 @@
 </nav>
 
 
-  <header>
+  <header class="estilo-header">
 
     <!--Logo principal-->
     
-      <img src="../img/logo-principal.png" alt="logo-principal">
+      <img class="logo-principal" src="../img/logo-principal.png" alt="logo-principal">
     
     <!--Titulo o encabezado-->
     
+    <div>
       <h1>Deltarunners</h1>
       <p class="parrafo-header">-Nunca te rindas-</p>
-    
+    </div>
     
     </header>
 
   <!--Dias y horarios de las actividades -->
 
-    <h2>Running: Dias y horarios</h2> 
-  
-      <ul>
+    <h2 class="titulo-servicios">Running: Dias y horarios</h2> 
 
-         <!-- Cuando esten disponibles se insertaran imagenes de los distintos grupos-->
+      <!-- Cuando esten disponibles se insertaran imagenes de los distintos grupos-->
 
-          <li>Lunes y Miercoles | 20 pm 
-             <img src="../img/grupo-uno.jpg" alt="grupo-uno">
-          </li>
-          <li>Lunes y Miercoles | 21 pm 
-            <img src="../img/grupo-uno.jpg" alt="grupo-uno">
-        </li>
-          <li>Martes y Jueves | 6 am
-            <img src="../img/grupo-uno.jpg" alt="grupo-uno">
-          </li>
-          <li>Martes y Jueves | 14 pm
-            <img src="../img/grupo-uno.jpg" alt="grupo-uno">
-          </li>
-          <li>Martes y Jueves | 19 pm
-            <img src="../img/grupo-uno.jpg" alt="grupo-uno">
-        </li>
+      <div class="grilla-horarios">
 
-      </ul>
- 
+        <div class="horarios">
+          <p>Lunes y Miercoles | 20 pm </p> <img src="../img/grupo-uno.jpg" alt="grupo-uno">
+        </div>
+        <div class="horarios">
+          <p>Lunes y Miercoles | 21 pm </p> <img src="../img/grupo-uno.jpg" alt="grupo-uno">
+        </div>
+        <div class="horarios">
+          <p>Martes y Jueves | 6 am</p> <img src="../img/grupo-uno.jpg" alt="grupo-uno">
+        </div>
+        <div class="horarios">
+          <p>Martes y Jueves | 14 pm</p> <img src="../img/grupo-uno.jpg" alt="grupo-uno">
+        </div>
+        <div class="horarios">
+          <p>Martes y Jueves | 19 pm</p> <img src="../img/grupo-uno.jpg" alt="grupo-uno">
+        </div>
+        
+
+        </div>
+
+
+      
   <!--Running a distancia-->
 
-  <h3 class="entrenamiento-distancia">Running: online | A distancia</h3>
 
-      <p>Tambien ofrecemos seguimiento virtual, contando con varios alumnos distribuidos en distintas localidades de nuestra provincia y tambien del pais. El mismo cuenta con una rutina de ejercicios personalizada a cada persona y con una duracion de una clase normal presencial. Como asi también videos, imagenes y audios segun corresponda, con la explicacion detallada de  cada ejercicio </p>
+  <div class="accordion mx-3" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          Running: A distancia | online 
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          <strong>Seguimiento online</strong> Tambien ofrecemos seguimiento virtual, contando con varios alumnos distribuidos en distintas localidades de nuestra provincia y tambien del pais. El mismo cuenta con una rutina de ejercicios personalizada a cada persona y con una duracion de una clase normal presencial. Como asi también videos, imagenes y audios segun corresponda, con la explicacion detallada de  cada ejercicio
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
   <!--Pie de página-->
