@@ -10,14 +10,18 @@
   <!--Link CSS-->
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- link AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- link Anymate.style -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Deltarunners</title>
-
-  <!--Link de fuente principal-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Nokora:wght@100;300;400;700;900&family=Oxanium:wght@200..800&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 
@@ -64,7 +68,7 @@
 
 <div>
   <h1>Deltarunners</h1>
-  <p class="parrafo-header">-Nunca te rindas-</p>
+  <p class="parrafo-header animate__animated animate__bounceInDown">-Nunca te rindas-</p>
 </div>
 
 </header>
@@ -74,8 +78,9 @@
    <!--Explicacion de qué es-->
    
   <div class="que-es">
-   
-   <p>Somos un grupo de entrenamiento adaptado a todo tipo de personas, desde personas que buscan mejorar tiempos, lograr podios, etc. hasta personas normales, que quieren superarse a si mismas, mejorar estado de animo y calidad de vida. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vel expedita.</p>
+   <h4 class="animate__animated animate__pulse big-text"><strong>Un grupo de entrenamiento para todos</strong>.</h4>
+   <p class="big-text">
+    Aquí no importa tu nivel de experiencia ni tu estado físico actual. Ya sea que quieras mejorar tus marcas, alcanzar podios, o simplemente comenzar a moverte, sentirte mejor y cuidar tu salud, este es tu lugar. Nos enfocamos en acompañarte a lograr tus objetivos, sea cual sea tu punto de partida.</p>
   </div>
 
   
@@ -129,7 +134,7 @@
 </main>
 
 
-<section class="quien-soy">
+<section class="quien-soy" data-aos="zoom-in">
 
 <!--Quien soy-->
 
@@ -139,7 +144,12 @@
     <img src="img/profesora.jpg" alt="profesora" class="foto-profesora">
   </div>
 
-  <p>Mi nombre es <strong>Alicia Regis</strong>, soy una madre orgullosa de tres hijos, uno de ellos de cuatro patas. Entreno hace mas de 10 años pero comence a formarme en el Running en llano y el trail de montaña hace 5 años. Cuento con certificados que avalan mi conocimiento. Soy muy apacionada de lo que hago. Me gusta que todos se sientan integrados en mis grupos, desde el mas nuevo hasta el mas avanzado, a todos les brindo mi completa atencion y conocimientos para que cada uno saque lo mejor de sí. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil modi molestias repudiandae magni perspiciatis omnis?</p>
+  <h5 class="text-center mt-5 big-text">¡Hola! Soy <strong>Alicia Regis</strong>.</h5>
+    <p class="big-text">Soy madre orgullosa de tres hijos (¡uno de ellos de cuatro patas!) y llevo más de 10 años entrenando. Hace 5 años decidí especializarme en el running en llano y el trail de montaña, obteniendo certificaciones que respaldan mis conocimientos.</p>
+    
+    <p class="big-text">Me apasiona lo que hago y disfruto acompañando a cada persona en su camino, ya sea su primer día o lleve años entrenando. En mis grupos, todos son bienvenidos: desde principiantes hasta avanzados, me aseguro de que cada uno reciba la atención y las herramientas necesarias para alcanzar su mejor versión.</p>
+    
+    <p class="big-text"><strong>Espero verte pronto en uno de mis entrenamientos. ¡Te aseguro que juntos lograremos grandes cosas!</strong></p>
 
 
 </section>
@@ -156,6 +166,11 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+<!-- link js AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html> 
