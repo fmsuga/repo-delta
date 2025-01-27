@@ -1,0 +1,33 @@
+// mixin para alinear textos
+
+@mixin alinear ($align) {
+  text-align: $align;
+}
+
+//mixin para grid
+
+@mixin grid ($display, $columns, $rows){
+  display: $display;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+}
+
+//mixin para margenes
+
+@mixin margenes ($marginl,$marginr){
+  margin-left: $marginl;
+  margin-right: $marginr;
+}
+
+//mixin para padding y margin
+
+@mixin p-m ($padding,$margin){
+  padding: $padding;
+  margin: $margin;
+}
+
+//mixin para hover
+
+@mixin transform ($scale, $translate) {
+  transform: scale($scale) translate($translate);
+}

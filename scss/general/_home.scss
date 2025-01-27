@@ -1,0 +1,194 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/* Estilos mobile*/
+
+/* color del nav */
+
+.bg-delta {
+  background-color: $color-nav;
+}
+
+/* Estilos header */
+.estilo-header{
+  @include alinear (center);
+  @include grid (grid, 1fr, none)
+}
+
+.logo-principal {
+  display: block;
+  @include margenes (auto, auto);
+}
+
+.parrafo-header{
+  background-color: $color-btn;
+  color: whitesmoke;
+  font-size: 17px;
+  font-style: italic;
+  padding: 6px;
+  display: inline-block;
+  box-shadow: 10px 10px 10px grey;
+  border-radius: 50px;
+}
+
+/* Estilos de main */
+.que-es{
+  @include p-m (15px, 20px 50px);
+  font-size: 17px;
+}
+
+.big-text {
+  font-size: 20px;
+}
+
+.carrusel {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.quien-soy {
+  background-color: $color-secundario;
+  @include margenes (1em,1em);
+  margin-top: 10%;
+  border-radius: 25px;
+}
+
+.quien-soy {
+  h2 {
+    @include alinear (center);
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px;}
+  
+}
+
+.quien-soy {
+  img {
+    display: block;
+    @include margenes (auto, auto);
+    width: 50%;
+  }
+}
+
+.quien-soy {
+  p {
+    @include alinear (justify);
+    padding: 20px;
+  }
+}
+
+.titulo-servicios {
+  @include alinear (justify);
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.grilla-horarios{
+  @include grid (grid, 1fr, repeat(5 1fr));
+  row-gap: 1.5rem;
+  padding: 4%;
+}
+ 
+.grupo-izq, .grupo-der, .grupo {
+  width: 90vw;
+}
+
+.horarios {
+  text-decoration: underline;
+  font-size: 21px;
+}
+
+.bg-acordeon {
+  background-color: $color-tercy;
+}
+
+.entrenamiento-distancia {
+  @include alinear (center);
+}
+
+
+iframe {
+  width: 80%;
+}
+
+h2, main, .center-content {
+  @include alinear (center);
+}
+
+
+.clase-gratis {
+  font-style: italic;
+}
+
+.redes {
+  list-style: none;
+  font-size: 20px;
+}
+
+.card-img-top {
+  width: 190px;
+  margin: 0 auto;
+}
+
+/* Estilos Formulario */
+
+.styled-form {
+  background-color: $color-secundario;
+  border-radius: 15px; 
+  padding: 20px; 
+  margin: 20px auto; 
+  max-width: 500px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px; 
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],input[type="tel"],select,textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical; 
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Estilo footer */
+
+footer {
+  font-size: 13px;
+  @include alinear (center);
+  padding: 20px;
+}

@@ -1,39 +1,33 @@
-
-/*Reinicio default*/
+/*Reset*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {  
+body {
   background-color: rgb(197, 220, 233);
-  font-family: "Saira", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:"wdth" 100;
 }
 
+/* Estilos mobile*/
+/* color del nav */
 .bg-delta {
-  background-color: rgb(73, 71, 128) ;
+  background-color: rgb(73, 71, 128);
 }
 
-/* Estilos para mobile */
-
+/* Estilos header */
 .estilo-header {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: ;
+  grid-template-rows: none;
 }
 
 .logo-principal {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  }
-
+}
 
 .parrafo-header {
   background-color: #2b2b2b;
@@ -46,22 +40,22 @@ body {
   border-radius: 50px;
 }
 
-.big-text {
-  font-size: 20px;
-}
-
+/* Estilos de main */
 .que-es {
   padding: 15px;
   margin: 20px 50px;
   font-size: 17px;
-  }
+}
+
+.big-text {
+  font-size: 20px;
+}
 
 .carrusel {
-   width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  }
-
+}
 
 .quien-soy {
   background-color: rgb(122, 162, 227);
@@ -69,12 +63,12 @@ body {
   margin-right: 1em;
   margin-top: 10%;
   border-radius: 25px;
-  }
+}
 
 .quien-soy h2 {
+  text-align: center;
   font-weight: bold;
   font-style: italic;
-  text-align: center;
   padding: 10px;
 }
 
@@ -86,21 +80,22 @@ body {
 }
 
 .quien-soy p {
-  padding: 20px;
   text-align: justify;
+  padding: 20px;
 }
 
 .titulo-servicios {
-  text-align: center;
+  text-align: justify;
   font-weight: bold;
   margin-top: 1.5rem;
 }
-.grilla-horarios{
+
+.grilla-horarios {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(5 1fr) ;
+  grid-template-rows: repeat(5 1fr);
   row-gap: 1.5rem;
-  padding: 4%;  
+  padding: 4%;
 }
 
 .grupo-izq, .grupo-der, .grupo {
@@ -115,17 +110,18 @@ body {
 .bg-acordeon {
   background-color: rgb(235, 216, 200);
 }
+
 .entrenamiento-distancia {
-    text-align: center;
-  }
+  text-align: center;
+}
 
 iframe {
-    width: 80%;
-    }
-    
+  width: 80%;
+}
+
 h2, main, .center-content {
   text-align: center;
-  }
+}
 
 .clase-gratis {
   font-style: italic;
@@ -141,19 +137,20 @@ h2, main, .center-content {
   margin: 0 auto;
 }
 
+/* Estilos Formulario */
 .styled-form {
-  background-color: rgb(122, 162, 227); 
-  border-radius: 15px; 
-  padding: 20px; 
-  margin: 20px auto; 
-  max-width: 500px; 
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  background-color: rgb(122, 162, 227);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
 }
 
 label {
@@ -161,10 +158,7 @@ label {
   font-weight: bold;
 }
 
-input[type="text"],
-input[type="tel"],
-select,
-textarea {
+input[type=text], input[type=tel], select, textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -173,7 +167,7 @@ textarea {
 }
 
 textarea {
-  resize: vertical; 
+  resize: vertical;
 }
 
 .center-content {
@@ -181,7 +175,7 @@ textarea {
   justify-content: center;
 }
 
-input[type="submit"] {
+input[type=submit] {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -192,11 +186,11 @@ input[type="submit"] {
   transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
+input[type=submit]:hover {
   background-color: #218838;
 }
 
-
+/* Estilo footer */
 footer {
   font-size: 13px;
   text-align: center;
@@ -204,89 +198,62 @@ footer {
 }
 
 /* Estilos para tablet */
-
 @media screen and (min-width: 600px) {
-
   .grilla-horarios {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 50vw); 
-    }
-
+    grid-template-rows: repeat(3, 50vw);
+  }
   .grilla-horarios div img {
     width: 98%;
-    }
-
-  .grupo-izq:hover{
+  }
+  .grupo-izq:hover {
     transform: scale(1.7) translate(25%);
-    }
-
-  .grupo-der:hover{
+  }
+  .grupo-der:hover {
     transform: scale(1.7) translate(-25%);
   }
-
-  .grupo:hover{
+  .grupo:hover {
     transform: scale(1.1);
   }
-
   .horarios {
     text-align: center;
     font-size: 28px;
   }
-
   .horarios-cinco {
     grid-column: span 2;
     text-align: center;
     width: 90vw;
-   }
-
-  
+  }
   .acordeon {
     margin-top: 200px;
-    }
-
+  }
   .big-text {
     font-size: 22px;
   }
-
-  
   .card-img-top {
     width: 300px;
     margin: 0 auto;
   }
-
 }
-  
 /* Estilos para Desktop */
-
 @media screen and (min-width: 1024px) {
-
   .quien-soy {
     margin-left: 60px;
     margin-right: 60px;
   }
-
-  .grupo-izq:hover {
+  .grupo-izq:hover, .grupo-der:hover, .grupo:hover {
     transform: none;
   }
-
-  .grupo-der:hover{
-    transform: none;
-  }
-
-  .grupo:hover{
-    transform: none;
-  }
-
   .grilla-horarios {
     row-gap: 0;
     column-gap: 1rem;
-    }
-
+  }
   .grilla-horarios div img {
     width: 45vw;
   }
-
   .grilla-horarios div .grupo {
     width: 75vw;
   }
-  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,54 @@
+@import "../utilidades/mixin";
+
+/* Estilos para tablet */
+
+@media screen and (min-width: 600px) {
+  .grilla-horarios {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 50vw);
+  }
+
+  .grilla-horarios{
+    div {
+      img {
+        width: 98%;}
+    }
+    
+  }
+  
+  .grupo-izq:hover {
+    @include transform (1.7, 25%)
+  }
+
+  .grupo-der:hover {
+    @include transform (1.7, -25%)
+  }
+
+  .grupo:hover {
+    transform: scale(1.1);
+  }
+
+  .horarios {
+    @include alinear (center);
+    font-size: 28px;
+  }
+
+  .horarios-cinco {
+    grid-column: span 2;
+    @include alinear (center);
+    width: 90vw;
+   }
+
+  .acordeon {
+    margin-top: 200px;
+    }
+
+  .big-text {
+    font-size: 22px;
+  }
+
+  .card-img-top {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
