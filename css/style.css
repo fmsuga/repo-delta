@@ -20,7 +20,7 @@ body {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: none;
+  grid-template-rows: min-content;
 }
 
 .logo-principal {
@@ -108,7 +108,7 @@ body {
 }
 
 .bg-acordeon {
-  background-color: rgb(235, 216, 200);
+  background-color: rgb(174, 216, 241);
 }
 
 .entrenamiento-distancia {

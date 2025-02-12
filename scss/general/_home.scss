@@ -12,7 +12,7 @@
 /* Estilos header */
 .estilo-header{
   @include alinear (center);
-  @include grid (grid, 1fr, none)
+  @include grid (grid, 1fr, min-content)
 }
 
 .logo-principal {
